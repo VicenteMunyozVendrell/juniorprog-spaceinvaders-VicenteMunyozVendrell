@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed = 10.0f;
     [SerializeField] private float xRange = 12.0f;
 
+    [SerializeField] private GameObject projectilePrefab;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,6 +30,12 @@ public class PlayerController : MonoBehaviour
         if(transform.position.x > xRange)
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0))
+        {
+            //Launch a projectile from the Player
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
        
     }
