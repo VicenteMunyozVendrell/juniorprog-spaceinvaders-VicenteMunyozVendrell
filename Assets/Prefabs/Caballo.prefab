@@ -787,6 +787,7 @@ GameObject:
   - component: {fileID: 5870264786772202282}
   - component: {fileID: 2800892389933129016}
   - component: {fileID: 2298559429502065802}
+  - component: {fileID: 7402271642438063050}
   m_Layer: 0
   m_Name: Caballo
   m_TagString: Untagged
@@ -850,6 +851,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 15
+--- !u!114 &7402271642438063050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843052389509922548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33eef5ecc46f9df459f617976a5c9518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+  topBound: 30
 --- !u!1 &4132092968341893884
 GameObject:
   m_ObjectHideFlags: 0
