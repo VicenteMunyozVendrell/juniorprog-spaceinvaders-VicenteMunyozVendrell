@@ -726,6 +726,8 @@ GameObject:
   - component: {fileID: 4788764495730766810}
   - component: {fileID: 5791214062563136208}
   - component: {fileID: 5427114160386760748}
+  - component: {fileID: 3660401738027381624}
+  - component: {fileID: 2216995838596153459}
   m_Layer: 0
   m_Name: Gallo
   m_TagString: Untagged
@@ -804,6 +806,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
   topBound: 30
+  lowerBounds: -10
+--- !u!65 &3660401738027381624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5171650306350644973}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.163523, y: 17.712723, z: 22.919369}
+  m_Center: {x: -0.06427288, y: 8.3563595, z: -0.96419334}
+--- !u!114 &2216995838596153459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5171650306350644973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21cc686e9b65c74586ce26d2926935d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &5286724490949282427
 GameObject:
   m_ObjectHideFlags: 0

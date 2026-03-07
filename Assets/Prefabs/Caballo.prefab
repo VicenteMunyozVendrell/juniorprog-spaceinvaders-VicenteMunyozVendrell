@@ -788,6 +788,8 @@ GameObject:
   - component: {fileID: 2800892389933129016}
   - component: {fileID: 2298559429502065802}
   - component: {fileID: 7402271642438063050}
+  - component: {fileID: 971572657423675337}
+  - component: {fileID: 2642306272773678398}
   m_Layer: 0
   m_Name: Caballo
   m_TagString: Untagged
@@ -864,6 +866,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
   topBound: 30
+  lowerBounds: -10
+--- !u!65 &971572657423675337
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843052389509922548}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.531195, y: 37.94682, z: 44.27929}
+  m_Center: {x: -0.15146732, y: 18.473408, z: 4.18705}
+--- !u!114 &2642306272773678398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843052389509922548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21cc686e9b65c74586ce26d2926935d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &4132092968341893884
 GameObject:
   m_ObjectHideFlags: 0

@@ -1478,6 +1478,8 @@ GameObject:
   - component: {fileID: 8739026317207911833}
   - component: {fileID: 4858563774118446524}
   - component: {fileID: -2298856420162586319}
+  - component: {fileID: 7872685245688661071}
+  - component: {fileID: 762440305505959554}
   m_Layer: 0
   m_Name: Vaca
   m_TagString: Untagged
@@ -1549,6 +1551,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
   topBound: 30
+  lowerBounds: -10
+--- !u!65 &7872685245688661071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689440062283286269}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14.604666, y: 31.92645, z: 49.694283}
+  m_Center: {x: -0.037172105, y: 15.611908, z: -0.18585522}
+--- !u!114 &762440305505959554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689440062283286269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21cc686e9b65c74586ce26d2926935d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &7004500545124086864
 GameObject:
   m_ObjectHideFlags: 0
