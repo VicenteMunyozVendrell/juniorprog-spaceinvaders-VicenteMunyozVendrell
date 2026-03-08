@@ -14,8 +14,10 @@ public class DetectCollisions : MonoBehaviour
         
     }
 
+   
     private void OnTriggerEnter(Collider other)
     {
+        //Al colisionar dos objetos ambos se destruyen
         Destroy(gameObject);
         Destroy(other.gameObject);
     }
